@@ -461,15 +461,15 @@ a{color:inherit;}
    (data hanya di memori, tidak butuh setup apa pun).
    ============================================================ */
 const CONFIG = {
-  SUPABASE_URL: 'https://erpsiivudrxrpfgqxadv.supabase.co/rest/v1/',
+  SUPABASE_URL: 'https://erpsiivudrxrpfgqxadv.supabase.co',
   SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVycHNpaXZ1ZHJ4cnBmZ3F4YWR2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQyMzQwMDUsImV4cCI6MjA5OTgxMDAwNX0.E6jir8hBI9tmWOgjAWzaYKmiTArpw8yjHERov-ySxMM',
 };
-const DEMO_MODE = !CONFIG.SUPABASE_URL || CONFIG.SUPABASE_URL.indexOf('https://erpsiivudrxrpfgqxadv.supabase.co/rest/v1/') !== -1;
+const DEMO_MODE = !CONFIG.SUPABASE_URL || CONFIG.SUPABASE_URL.indexOf('YOUR_SUPABASE_URL') !== -1;
 let sb = null;
 if(!DEMO_MODE && window.supabase){
   sb = window.supabase.createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY);
 }
-
+  
 const EXPENSE_CATS = [
   {key:'Makan', color:'#8B5CF6', icon:'🍜'},
   {key:'Kos', color:'#EC4899', icon:'🏠'},
