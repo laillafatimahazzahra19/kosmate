@@ -1,0 +1,9 @@
+{
+  "name": "kosmate-ai",
+  "version": "2.0.0",
+  "private": true,
+  "description": "KosMate AI - Smart Monthly Budget Tracker untuk anak kos & mahasiswa",
+  "engines": {
+    "node": ">=18"
+  }
+}
